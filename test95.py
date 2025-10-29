@@ -20,7 +20,8 @@ def trpicost(city,days,expenses):
     return rentalcarcost(days)+hotelcost(days)+planecost(city)+expenses
     
 
-print("cost of car rental is",rentalcarcost)
-print("cost of plane ride is",planecost)
-print("cost of hotel is",hotelcost)
+print("cost of car rental is",rentalcarcost(4))
+print("cost of plane ride is",planecost("hyderabad"))
+print("cost of hotel is",hotelcost(8))
 print("total cost is",trpicost("hyderabad",9,400))
+print(trpicost("banglore",8,600))
